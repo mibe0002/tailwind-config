@@ -5,9 +5,44 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
+<MainLayout title="Tailwind Config">
+	<article class="mx-xl">
+		<h1 class="text-xlarge font-light font-extrabold text-neutral-900 pt-m">Design system</h1>
+
+		<div class="max-w-7xl mx-auto px-xs sm:px-s lg:px-sm py-lg">
+			<h2 class="text-large font-regular text-center mb-sm">Color Palette Showcase</h1>
+			
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-s">
+				
+				<!-- Example of each color display -->
+				<div class="text-center">
+				<div class="rounded-t-lg drop-shadow-lg p-s text-center bg-red-50">
+				<p class="text-white text-lg font-bold">Red 500</p>
+				<p class="text-white opacity-75">#FF0933</p>
+				</div>
+
+				<div class="rounded-t-lg drop-shadow-lg p-s text-center bg-red-50"></div>
+				</div>
+
+				<div class="rounded-lg shadow-lg p-6 text-center bg-blue-500">
+				<p class="text-white text-lg font-bold">Blue 500</p>
+				<p class="text-white opacity-75">#196572</p>
+				</div>
+
+				<div class="rounded-lg shadow-lg p-6 text-center bg-yellow-500">
+				<p class="text-white text-lg font-bold">Yellow 500</p>
+				<p class="text-white opacity-75">#FFDF00</p>
+				</div>
+
+				<div class="rounded-lg shadow-lg p-6 text-center bg-neutrals-500">
+				<p class="text-white text-lg font-bold">Neutrals 500</p>
+				<p class="text-white opacity-75">#4D4941</p>
+				</div>
+				
+				<!-- Add more colors based on your palette -->
+			</div>
+		</div>
+
 		<Button>Klik!</Button>
 		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
 		<Image src={thumbsup} alt=""></Image>
