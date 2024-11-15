@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Card from "../components/Card.astro";
 ---
 <MainLayout title="Tailwind Config">
 	<article class="mx-xl">
@@ -43,8 +44,257 @@ import thumbsup from "../assets/images/thumbsup.png";
 			</div>
 		</div>
 
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+		<section class="grid md:grid-cols-2 gap-xs">
+			<Card
+
+					url="#"
+
+					cardimage="ballroom.jpg"
+
+					cardimagealt="Et par der danser ballroom"
+
+					badgenyt="true"
+
+					badgerabat="true"
+
+					badgerabatsats="10%"
+
+					badgefaapladser="true"
+
+					holdnavn="Ballroom for begyndere"
+
+					tidspunkt="Fredag 20-22"
+
+					aldersgruppe="25+"
+
+					niveau="Begynder"
+
+					pladserpaaholdet="20"
+
+					lokale="Koncertsalen"
+
+					holdbeskrivelse="Ballroom er en meget romantisk dans. Så find din partner, og meld jer til ballroom dans for begynder, og mærk suset i den romantiske dans."
+
+					underviserfoto="karnahage.jpg"
+
+					underviserfotoalt="Karna Hage - underviser på ballroom for begyndere"
+
+					undervisernavn="Karna Hage"
+
+					underviserinfo="Karna er uddannet Ballroom instruktør fra Danse-Staffans skole og har 20 års erfaring som danseinstruktør."
+
+					>
+
+			</Card>
+
+			<Card
+
+					url="#"
+
+					cardimage="hip-hop.jpg"
+
+					cardimagealt="Hip-hoppere"
+
+					badgenyt="false"
+
+					badgerabat="false"
+
+					badgerabatsats="0"
+
+					badgefaapladser="false"
+
+					holdnavn="Far og børn Hip-hop"
+
+					tidspunkt="Torsdag 16-17"
+
+					aldersgruppe="Alle"
+
+					niveau="Alle"
+
+					pladserpaaholdet="40"
+
+					lokale="Forbrændingen"
+
+					holdbeskrivelse="Hip-hop får pulsen op. Så grib fat i dine børn, og få trænet far-flæsket væk, så du kan føle dig 20 år yngre igen."
+
+					underviserfoto="fredefidus.jpg"
+
+					underviserfotoalt="Frede Fidus - underviser på Far og børn hip-hop"
+
+					undervisernavn="Frede Fidus"
+
+					underviserinfo="Frede Fidus har turneret rundt med alle de store, blandt andet Nik & Jay. Nu deler han danseglæden gennem undervisning."
+
+					>
+
+			</Card>
+
+			<Card
+
+					url="#"
+
+					cardimage="folkedans.jpg"
+
+					cardimagealt="Folkedansere i gang"
+
+					badgenyt="false"
+
+					badgerabat="true"
+
+					badgerabatsats="20%"
+
+					badgefaapladser="false"
+
+					holdnavn="Folkedans"
+
+					tidspunkt="Tirsdag 13-16"
+
+					aldersgruppe="60+"
+
+					niveau="Fortsætter"
+
+					pladserpaaholdet="40"
+
+					lokale="Vestibulen"
+
+					holdbeskrivelse="Holdet til alle jer, der elsker traditioner. Folkedans er blevet populært igen - og her får du en grundig indføring i forskellige typer folkedans."
+
+					underviserfoto="mogensferdo.jpg"
+
+					underviserfotoalt="Mogens Ferdo - underviser på Folkedans"
+
+					undervisernavn="Mogens Ferdo"
+
+					underviserinfo="Mogens Ferdo er af den gamle skole. Hans undervisning består af lige dele ros og revser, for som Mogens siger: Frygt er en motiverende faktor for at lære!"
+
+					>
+
+			</Card>
+
+			<Card
+
+					url="#"
+
+					cardimage="dansenmedregitze.jpg"
+
+					cardimagealt="Kom og dans med Regitze"
+
+					badgenyt="true"
+
+					badgerabat="false"
+
+					badgerabatsats=""
+
+					badgefaapladser="true"
+
+					holdnavn="Dansen med Regitze"
+
+					tidspunkt="Onsdag 14-16"
+
+					aldersgruppe="10-15"
+
+					niveau="Alle"
+
+					pladserpaaholdet="24"
+
+					lokale="Svedhytten"
+
+					holdbeskrivelse="Regitze var barnestjerne i 00'erne, og fik flere disco-dansehits - bl.a. Se den lil' Kat'killing og Per Syvspring. Nu kan du lære hvordan hun laver kickflips og flops!"
+
+					underviserfoto="regitze.jpg"
+
+					underviserfotoalt="Regitze - instruktør på Børnedisco-holdet"
+
+					undervisernavn="Regitze"
+
+					underviserinfo="Regitze elser disco, og hun elsker børn. Så længe det dunker, holder hun sig kørende - og får dine børn til at gøre det samme."
+
+					>
+
+			</Card>
+
+			<Card
+
+					url="#"
+
+					cardimage="freestyle.jpg"
+
+					cardimagealt="Freestyle dans er sejt "
+
+					badgenyt="false"
+
+					badgerabat="true"
+
+					badgerabatsats="5%"
+
+					badgefaapladser="true"
+
+					holdnavn="Freestyle battle"
+
+					tidspunkt="fredag 12-14"
+
+					aldersgruppe="16-24"
+
+					niveau="God form påkrævet!"
+
+					pladserpaaholdet="24"
+
+					lokale="Svedhytten"
+
+					holdbeskrivelse="Freestyle battle, til alle jer seje drenge og flødefyre, der gerne vil imponere damerne på discoet. Vi laver vilde moves og kommer i god form, så dine chancer for en god aften i byen bliver bedre:-)"
+
+					underviserfoto="lixhansom.jpg"
+
+					underviserfotoalt="Lix Hansom - instruktør på Freestyle battle"
+
+					undervisernavn="Lix Hansom"
+
+					underviserinfo="Lix Hansom er en af danmarks bedste freestyle battle dansere. Han har blandt andet vundet Bornholmsmesterskaberne i Freestyle 2012, inden han flyttede til Ringsted for at blive danseinstruktør."
+
+					>
+
+			</Card>
+
+			<Card
+
+					url="#"
+
+					cardimage="jitterbug.jpg"
+
+					cardimagealt="Jitterbug dans"
+
+					badgenyt="true"
+
+					badgerabat="false"
+
+					badgerabatsats=""
+
+					badgefaapladser="false"
+
+					holdnavn="Jitterbug"
+
+					tidspunkt="onsdag 18-20"
+
+					aldersgruppe="18+"
+
+					niveau="Mellem"
+
+					pladserpaaholdet="20"
+
+					lokale="Koncertsalen"
+
+					holdbeskrivelse="Jitterbug er til alle jer rock 'n' roll elskere. Kridt danseskoene af, og kom og fyr den af. Lær at kaste med din dansepartner og bruge en kam mens du spjætter med benene."
+
+					underviserfoto="hellvis.jpg"
+
+					underviserfotoalt="Hellvis - instruktør på Jitterbug holdet"
+
+					undervisernavn="Hellvis"
+
+					underviserinfo="Hellvis ligner Elvis - men han er bare en lokal bølle fra Ringsted. Til gengæld kan han danse som Elvis - og det elsker han at gøre. Men pas på - han har det med at forføre damerne på danseholdet.">
+
+			</Card>
+		</section>
+		
 	</article>
 </MainLayout>

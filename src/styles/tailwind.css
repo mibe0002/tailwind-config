@@ -4,7 +4,7 @@
 
 @layer base {
   p {
-    @apply text-body;
+    @apply text-base;
     @apply text-neutral-900;
   }
 }

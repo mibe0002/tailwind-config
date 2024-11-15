@@ -1,0 +1,42 @@
+---
+const { url="#", cardimage="", cardimagealt="", 
+
+badgenyt="false", badgerabat="false", badgerabatsats="", badgefaapladser="false", 
+
+holdnavn="", tidspunkt="", aldersgruppe="", niveau="", pladserpaaholdet="", lokale="", holdbeskrivelse="", 
+
+underviserfoto="", underviserfotoalt="", undervisernavn="", underviserinfo="" } = Astro.props;
+---
+<article class="border-4 border-blue-600">
+    <div class="relative">
+        <a href={url} class=""></a>
+        
+        <img src="{cardimage}" alt="{cardimagealt}" class="w-full">
+        {(badgenyt === "true") && <div class="badge absolute top-[0] bg-blue-600 text-neutral-50 py-xs px-s">Nyt hold!</div>}
+        {(badgerabat === "true") && <div class="badge absolute top-[0] right-[0] bg-red-600 text-neutral-50 py-xs px-s">10% Rabat</div>}
+        {(badgefaapladser === "true") &&  <div class="badge absolute bottom-[0] right-[0] bg-yellow-600 text-neutral-900 py-xs px-s">Kun få pladser tilbage!</div>}
+    </div>
+
+<div class="pt-sm px-s pb-s">
+<h2 class="text-large">{holdnavn}</h2>
+
+<div class="grid grid-cols-2 py-xs">
+<p>{tidspunkt}</p>
+<p>{aldersgruppe}</p>
+<p>{niveau}</p>
+
+<p>{pladserpaaholdet}</p>
+<p>{lokale}</p>
+</div>
+
+<p>{holdbeskrivelse}</p>
+</div>
+
+<div class="border-t-4 grid grid-cols-[1fr_4fr] py-m px-s border-blue-600">
+    <img src="../images/karnahage.jpg" alt="profilbillede" class="rounded-full w-4/6">
+    <div>
+    <p>Underviser: Karna Hage</p>
+    <p>Karna er uddannet Ballroom instruktør fra Danse-Staffans skole og har 20 års erfaring som danseinstruktør.</p>
+    </div>
+</div>
+</article>
