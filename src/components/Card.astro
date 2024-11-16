@@ -7,14 +7,13 @@ holdnavn="", tidspunkt="", aldersgruppe="", niveau="", pladserpaaholdet="", loka
 
 underviserfoto="", underviserfotoalt="", undervisernavn="", underviserinfo="" } = Astro.props;
 ---
-<article class="border-4 border-blue-600">
+<article class="border-4 border-blue-600 max-h-[1036px]">
     <div class="relative">
-        <a href={url} class=""></a>
-        
-        <img src="{cardimage}" alt="{cardimagealt}" class="w-full">
-        {(badgenyt === "true") && <div class="badge absolute top-[0] bg-blue-600 text-neutral-50 py-xs px-s">Nyt hold!</div>}
-        {(badgerabat === "true") && <div class="badge absolute top-[0] right-[0] bg-red-600 text-neutral-50 py-xs px-s">10% Rabat</div>}
-        {(badgefaapladser === "true") &&  <div class="badge absolute bottom-[0] right-[0] bg-yellow-600 text-neutral-900 py-xs px-s">Kun få pladser tilbage!</div>}
+        <!-- <a href={url} class=""></a> -->
+        <img src={cardimage} alt={cardimagealt} class="w-full">
+        {(badgenyt === "true") && <div class="badge absolute top-[0] bg-blue-600 text-neutral-50 py-xs px-s h-auto">Nyt hold!</div>}
+        {(badgerabat === "true") && <div class="badge absolute top-[0] right-[0] bg-red-600 text-neutral-50 py-xs px-s h-auto">10% Rabat</div>}
+        {(badgefaapladser === "true") &&  <div class="badge absolute bottom-[0] right-[0] bg-yellow-600 text-neutral-900 py-xs px-s h-auto">Kun få pladser tilbage!</div>}
     </div>
 
 <div class="pt-sm px-s pb-s">
