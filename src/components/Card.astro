@@ -7,16 +7,16 @@ holdnavn="", tidspunkt="", aldersgruppe="", niveau="", pladserpaaholdet="", loka
 
 underviserfoto="", underviserfotoalt="", undervisernavn="", underviserinfo="" } = Astro.props;
 ---
-<article class="border-4 border-blue-600 max-h-[1036px]">
+<article class="border-4 border-blue-600 flex flex-col h-auto">
     <div class="relative">
         <!-- <a href={url} class=""></a> -->
-        <img src={cardimage} alt={cardimagealt} class="w-full">
+        <img src={cardimage} alt={cardimagealt} class="w-full h-[300px] object-cover">
         {(badgenyt === "true") && <div class="badge absolute top-[0] bg-blue-600 text-neutral-50 py-xs px-s h-auto">Nyt hold!</div>}
         {(badgerabat === "true") && <div class="badge absolute top-[0] right-[0] bg-red-600 text-neutral-50 py-xs px-s h-auto">10% Rabat</div>}
         {(badgefaapladser === "true") &&  <div class="badge absolute bottom-[0] right-[0] bg-yellow-600 text-neutral-900 py-xs px-s h-auto">Kun få pladser tilbage!</div>}
     </div>
 
-<div class="pt-sm px-s pb-s">
+<div class="pt-sm px-s pb-s flex-grow">
 <h2 class="text-large">{holdnavn}</h2>
 
 <div class="grid grid-cols-2 py-xs">
@@ -31,11 +31,11 @@ underviserfoto="", underviserfotoalt="", undervisernavn="", underviserinfo="" } 
 <p>{holdbeskrivelse}</p>
 </div>
 
-<div class="border-t-4 grid grid-cols-[1fr_4fr] py-m px-s border-blue-600">
-    <img src="../images/karnahage.jpg" alt="profilbillede" class="rounded-full w-4/6">
+<div class="border-t-4 grid grid-cols-[1fr_4fr] items-center gap-xs py-m px-s border-blue-600">
+        <img src={underviserfoto} alt={underviserfotoalt} class="rounded-full w-[161.51px] h-auto">
     <div>
-    <p>Underviser: Karna Hage</p>
-    <p>Karna er uddannet Ballroom instruktør fra Danse-Staffans skole og har 20 års erfaring som danseinstruktør.</p>
+    <p>Underviser: {undervisernavn}</p>
+    <p>{underviserinfo}</p>
     </div>
 </div>
 </article>
